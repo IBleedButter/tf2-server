@@ -1,6 +1,8 @@
 Compile all plugins instead of using install.zip
 
-```
+pain peko
+
+```Bash
 mkdir ~/.build/ ; cd ~/.build/
 
 git clone git@github.com:Fortress-Faceoffs/Fortress-Faceoffs-Weapon-Whitelist.git --config core.sshCommand='ssh -o "StrictHostKeyChecking no" -i ~/.ssh/id_ed25519'
