@@ -7,7 +7,7 @@ ARG SOURCEMOD_URL="https://sm.alliedmods.net/smdrop/1.11/sourcemod-1.11.0-git694
 # Install dependencies
 RUN dpkg --add-architecture i386
 RUN apt-get update && apt-get --yes upgrade
-RUN apt-get --yes install curl wget git openssh-client nano unzip gcc-multilib lib32z1 libncurses5:i386 libbz2-1.0:i386 lib32gcc-s1 lib32stdc++6 libtinfo5:i386 libcurl4-gnutls-dev libcurl3-gnutls:i386 libsdl2-2.0-0:i386
+RUN apt-get --yes install curl wget git openssh-client nano unzip gcc-multilib gdb lib32z1 libncurses5:i386 libbz2-1.0:i386 lib32gcc-s1 lib32stdc++6 libtinfo5:i386 libcurl4-gnutls-dev libcurl3-gnutls:i386 libsdl2-2.0-0:i386
 
 # Create Steam user & group
 RUN groupadd --system steam
